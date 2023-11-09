@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">TaskN7</string>
+    <string name="enter_field_name">Enter Field Name</string>
+    <string name="field_is_numberic">Field is Numberic</string>
+    <string name="add_field">Add Field</string>
+</resources>

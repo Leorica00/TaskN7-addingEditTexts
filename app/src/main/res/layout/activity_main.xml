@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background"
+        tools:ignore="ImageContrastCheck" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <LinearLayout
+            android:id="@+id/et_container"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="30dp">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/field_name_et"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:hint="@string/enter_field_name" />
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:id="@+id/check_numeric"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="@string/field_is_numberic" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/add_field_btn"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="30dp"
+                android:text="@string/add_field"
+                android:background="@drawable/costume_btn"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>
